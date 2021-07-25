@@ -71,9 +71,6 @@ gource --seconds-per-day ${GOURCE_SECONDS_PER_DAY} \
 	--filename-time ${GOURCE_FILENAME_TIME} \
 	--max-user-speed ${GOURCE_MAX_USER_SPEED} \
 	--bloom-multiplier 1.2 \
-	--highlight-users \
-	--file-idle-time ${GOURCE_FILE_IDLE_TIME} \
-	--user-font-size ${GOURCE_USER_FONT_SIZE} \
 	--${GOURCE_RES} \
 	--stop-at-end \
 	./development.log \
