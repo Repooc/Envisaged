@@ -36,7 +36,7 @@ if [ "${LOGO_URL}" != "" ]; then
 	if [ "$?" = 0 ]; then
 		echo "Using logo from: ${LOGO_URL}"
 		export LOGO=" -i ./logo.image "
-		if [[ "${TEMPLATE}" == "repooc" ]] | [[ "${TEMPLATE}" == "border" ]]; then
+		if [[ "${TEMPLATE}" == "repooc" ]] || [[ "${TEMPLATE}" == "border" ]]; then
 			export LOGO_FILTER_GRAPH=";[with_date][2:v]overlay=main_w-overlay_w-40:main_h-overlay_h-40[with_logo]"
 			export FILTER_GRAPH_MAP=" -map [with_logo] "
 		else
@@ -44,7 +44,7 @@ if [ "${LOGO_URL}" != "" ]; then
 			export FILTER_GRAPH_MAP=" -map [with_logo] "
 		fi
 	else
-		if [[ "${TEMPLATE}" == "repooc" ]] | [[ "${TEMPLATE}" == "border" ]]; then
+		if [[ "${TEMPLATE}" == "repooc" ]] || [[ "${TEMPLATE}" == "border" ]]; then
 			echo "Not using a logo."
 			export FILTER_GRAPH_MAP=" -map [with_date] "
 		else
@@ -52,7 +52,7 @@ if [ "${LOGO_URL}" != "" ]; then
 		fi
 	fi
 else
-	if [[ "${TEMPLATE}" == "repooc" ]] | [[ "${TEMPLATE}" == "border" ]]; then
+	if [[ "${TEMPLATE}" == "repooc" ]] || [[ "${TEMPLATE}" == "border" ]]; then
 		echo "Not using a logo."
 		export FILTER_GRAPH_MAP=" -map [with_date] "
 	else
