@@ -92,6 +92,8 @@ ENV \
     TEMPLATE="border" \
     VIDEO_RESOLUTION="1080p" \
     XVFB_WHD="3840x2160x24" \
+    GOURCE_FILE_IDLE_TIME="20" \
+    GOURCE_USER_FONT_SIZE="23" \
     GOURCE_FPS="60"
 
 # Expose port 80 to serve mp4 video over HTTP.
