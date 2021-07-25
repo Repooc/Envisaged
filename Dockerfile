@@ -45,6 +45,7 @@ RUN set -xe; \
 # Copy our assets into image.
 COPY ./docker-entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY . /visualization/
+RUN chmod +x /visualization/repooc_template.sh
 
 # Set our working directory.
 WORKDIR /visualization
