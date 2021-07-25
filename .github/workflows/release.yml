@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/Envisaged:custom
+          tags: ghcr.io/repooc/envisaged:custom
