@@ -74,6 +74,7 @@ ENV \
     GOURCE_CAMERA_MODE="overview" \
     GOURCE_DIR_DEPTH="3" \
     GOURCE_FILENAME_TIME="2" \
+    GOURCE_FILE_FONT_SIZE="14" \
     GOURCE_FILTERS="" \
     GOURCE_FONT_SIZE="48" \
     GOURCE_HIDE_ITEMS="usernames,mouse,date,filenames" \
